@@ -19,19 +19,9 @@ Action (4.7): Ensure that homelessness and housing support services meet the div
 
 [ EZHouz app, version: 1.0.0 ]
 
-Contact us
 
-Presentation
-Material shared in TPL TOProsperity Hackathon in Toronto.
+Authors:
 
-Here
-API
-Group of methods that supports the project.
-
-Here
-Contact us
-Alexandre Belloni Alves  
-
-Gregory Uchitel 
-
-Leonel Oliveira  
+Alexandre Belloni Alves; 
+Gregory Uchitel;
+Leonel Oliveira;
