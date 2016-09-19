@@ -23,5 +23,7 @@ Action (4.7): Ensure that homelessness and housing support services meet the div
 Authors:
 
 Alexandre Belloni Alves; 
+
 Gregory Uchitel;
+
 Leonel Oliveira;
