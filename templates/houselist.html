@@ -1,0 +1,182 @@
+<ion-view view-title="Houses">
+    <ion-content ng-class="{expanded:isExpanded}">
+
+        <div class="list animate-fade-slide-in-right dark-grey-bg list-house">
+        <div class="center spacing-top"><h4>House List</h4></div>
+
+        
+            <div class="padding center">
+                <button class="button button-small button-assertive" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i> Filters </button>
+                <button class="button button-small button-dark" ui-sref="app.housemap"><i class="ion-ios-location"></i> Map</button>
+            </div>
+
+            <a ui-sref="app.house{{house.Id}}" class="item item-icon-right house-list" ng-repeat="house in houses | orderBy: 'Id' | limitTo: 50"> 
+            
+                    <div ng-if="!house.Image"><img src="https://www.theroomlink.co.za/assets/img/no-property-image.png" class="house"></div>
+                    <div ng-if="house.Image"><img src="{{house.Image}}" class="house"></div>
+                    <h2>{{house.Name}}</h2>
+                    <p class='address'><i class="ion-location"></i>&nbsp;&nbsp;{{house.Address}} </p>
+                    <p class='overall'><i class=""></i><span class="rating-t">Rating:</span>&nbsp;{{house.OverallRating}}% | <i class="ion-cube"></i>&nbsp;<span class="rating-t"></span>&nbsp;{{house.Provider}}</p>
+                    <i class="ion-chevron-right icon-r"></i>
+             
+               
+            </a>
+            
+        </div>
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.login"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profile"><i class="ion-person"></i></a>
+              </div>
+              
+        </div>
+    </div>
+
+    <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your home{{contact.img}}</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+                    <h4>Bedrooms</h4>
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Bachelor
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      1 Bedroom
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      2 Bedrooms
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      3+ bedroom
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      ALL
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+                </div>
+
+                <div class="list top-list">
+                <h4>Provider</h4>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid" checked="checked">
+                    <div class="item-content">
+                      CO-OP
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      PNP
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      TCHC
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      ALL
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+                <h4>Zones</h4>
+                <div class="list">
+                  <img src='http://onclickmidia.net/library/img/mapg.fw.png' class="zonemaps">
+                </div>
+                <div class="elem-list">
+                  <select class="browser-default button button-full  btn-select">
+                    <option value="" disabled selected>ALL ZONES</option>
+                    <option value="1">ZONE 1</option>
+                    <option value="2">ZONE 2</option>
+                    <option value="3">ZONE 3</option>
+                    <option value="3">ZONE 4</option>
+                    <option value="3">ZONE 5</option>
+                    <option value="3">ZONE 6</option>
+                    <option value="3">ZONE 7</option>
+                    <option value="3">ZONE 8</option>
+                    <option value="3">ZONE 9</option>
+                    <option value="3">ZONE 10</option>
+                    <option value="3">ZONE 11</option>
+                    <option value="3">ZONE 12</option>
+                    <option value="3">ZONE 13</option>
+                    <option value="3">ZONE 14</option>
+                    <option value="3">ZONE 15</option>
+                    
+
+                  </select>
+
+
+
+                <div class="list">
+                <button class="button button-medium btn-n" ui-sref="app.zones">Learn More about Zones</button>
+                </div>
+
+
+                    <button class="button button-full btn-n bar-assertive" ui-sref="app.houselist" onclick="location.reload();" ng-click="closeModal()">
+                    
+                      Search
+                    </button>
+                    
+       
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+</ion-view>
+
+
+

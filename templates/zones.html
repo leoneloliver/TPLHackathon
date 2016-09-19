@@ -1,0 +1,44 @@
+<ion-view view-title="Zones">
+    <ion-content ng-class="{expanded:isExpanded}">
+
+        <div class="list animate-fade-slide-in-right dark-grey-bg list-house">
+        <div class="center spacing-top"><h4>All Zones</h4></div>
+        
+
+
+          <div class="item line">
+            <div class="nav-zones">
+              
+              <button ui-sref="app.zone{{zone.Id}}" ng-repeat="zone in zones | orderBy: 'Id'" class="fl">{{zone.Name}} <i class="ion-ios-arrow-forward"></i></button>
+            </div>
+
+    
+            
+        </div>
+
+       </div> 
+    </ion-content>
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.login"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.houselist"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profile"><i class="ion-person"></i></a>
+              </div>
+              
+        </div>
+    </div>
+
+
+   
+
+    
+</ion-view>
+
+
+

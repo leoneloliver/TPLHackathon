@@ -1,0 +1,79 @@
+
+
+<ion-view view-title="House Detail">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+    
+        <div class="hero slide-up" style="background-image: url('{{house.Image}}');" ng-repeat="house in houses.Details | limitTo:1">
+            <div class="content">
+                <div class="avatar hide" style="background-image: url('{{house.Image}}');"></div>
+                <h3><a class="light">{{house.Name}}</a></h3>
+                <!-- <h4>20 HUMBERLINE DRIVE</h4> -->
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static" ng-repeat="house in houses.Details | limitTo:1">
+            <a class="tab-item" ng-click="ok('{{house.Id}}','{{house.Image}}','{{house.Name}}')">
+                <i class="icon ion-heart"></i> Add to Wishlist
+            </a>
+            <a ui-sref="" class="tab-item">
+                <i class="icon ion-images"></i> Photos
+            </a>
+        </div>
+
+        
+
+
+        <h4 class="content padding double-padding-x" ng-repeat="house in houses.Details | limitTo:1">{{house.Name}}</h4>
+        <div class="list animate-fade-slide-in-right">
+            
+            <div class="item item-icon-right line" ng-repeat="house in houses.Details | limitTo:1">
+                <p class='address'><i class="ion-location"></i>&nbsp;&nbsp;{{house.Address}}</p>
+                <p>Neighborhood: <span class="cr">{{house.Neighborhood}}</span></p>
+            </div>
+
+            <div>
+
+                <div class="item item-icon-right line" ng-repeat="house in houses.Details | limitTo:1">
+                    
+                    <p><span class="rating-t"><i class="ion-filing"></i>&nbsp;Badrooms</span>&nbsp;<span class="cr">{{house.Bedrooms}}</span></p>
+
+                    <p class='overall'><span class="rating-t"><i class="ion-cube"></i>&nbsp;Provider</span>&nbsp;<span class="cr">{{house.Provider}}</span></p>
+
+                    <p><span class="rating-t"><i class="ion-speakerphone"></i></span> Reviews <span class="cr">{{house.Reviews}}</span></p>
+
+
+                    <p><span class="rating-t rating-g"><i class="ion-pie-graph"></i></span> Overall Rating <span class="cr">{{house.OverallRating}}%</span></p>
+
+
+
+
+                    <h4 class="titleinfo">Neighborhood Information</h4>
+
+                    
+
+                    <div class="flr"><span class="rating-t"><i class="ion-settings"></i></span>&nbsp;Maintenance Rating <span class="cr"><!-- {{rating.Value}} --> </span></div><div class="bar-on"><div class="bar-in bar-size{{house.MaintenanceRating}}"></div></div>
+                    <!-- <p><span class="rating-t"><i class="ion-bug"></i></span> Pest Infection: <span class="cr">{{house.PestInfectionRating}}</span></p> -->
+                    
+                    
+
+
+
+                    
+                </div>  
+
+                <div ng-repeat="rating in houses.ZoneRatings" class="item item-icon-right line">
+                    <div class="flr"><span class="rating-t"><i class="ion-ios-circle-filled"></i></span>&nbsp;{{rating.Name}} <span class="cr"><!-- {{rating.Value}} --> </span></div><div class="bar-on"><div class="bar-in bar-size{{rating.Value}}"></div></div>
+                </div>
+
+                <div class="padding center" ng-repeat="house in houses.Details | limitTo:1">
+                        <a href="http://maps.google.com/?q={{house.Latitude}},{{house.Longitude}}" class="button button-full button-assertive btn-wide" target="_blank"><i class="ion-ios-location"></i> Map</a>
+                </div>
+             
+
+        </div>
+     
+    </ion-content>
+
+    
+    
+</ion-view>
+

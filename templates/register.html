@@ -1,0 +1,115 @@
+<ion-view view-title="Register" class="profile favourite artists create">
+   
+    <ion-content >
+        
+      <div class="center spacing-top"><h4>Create Account</h4></div>
+
+
+        <div class="list animate-fade-slide-in-right grey-account list-artists">
+
+            <div class="list">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Full Name</span>
+                <input type="text" placeholder="First Name" class="txt-w" value="Leonel Oliveira">
+              </label>
+              <!-- <label class="item item-input item-floating-label">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Last Name" class="txt-w">
+              </label> -->
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Email</span>
+                <input type="text" placeholder="Email" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Telephone</span>
+                <input type="text" placeholder="Telephone" class="txt-w">
+              </label>
+              
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Cell phone</span>
+                <input type="text" placeholder="Cell phone" class="txt-w">
+              </label>
+               <!-- <div class="item"> 
+                 <div class="list item">
+                    <span class="input-label" >Gender</span>
+                      <label class="item item-radio">
+                        <input type="radio" name="group" checked>
+                        <div class="item-content">
+                          Male
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                      </label>
+                      <label class="item item-radio">
+                        <input type="radio" name="group">
+                        <div class="item-content">
+                          Female
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                      </label>
+
+               </div> -->
+               <label class="item item-input item-floating-label">
+                <span class="input-label" >Curret Income</span>
+                <input type="text" placeholder="Curret Income" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Application ID</span>
+                <input type="text" placeholder="Application ID" class="txt-w">
+                <span><a href="#">If you don't have the Application ID click here</a></span>
+              </label>
+               <label class="item item-input item-floating-label">
+                <span class="input-label" >New password</span>
+                <input type="password" placeholder="New password" class="txt-w">
+              </label>
+
+               </div>
+              <div class="item">
+                <button class="button button-light button-full">Include family members</button><br>
+                <button class="button button-light button-full button-positive" ng-controller='ModalStartCtrl' ng-click="openModal()">Next step</button>
+
+              </div>
+              
+            </div>
+         
+            
+        </div>
+        <div class="space-footer"></div>
+
+        <!-- modal template -->
+        <script id="modal-start.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Thank you!</h4>
+            </ion-header-bar>
+            <ion-content>
+              
+              <div class="item" id="inner">
+              <p class="center">Thank you for registering!</p>
+              <p class="center"><ion-spinner icon="spiral"></ion-spinner></p>
+                    
+                
+                <div class="padding center">
+                    <button class="button button-medium btn-n bar-balanced button-full" ui-sref="app.login">
+                      Getting Start
+                    </button>
+                    
+                    <!-- <button class="button button-medium bar-assertive" ng-click="closeModal()">close</button> -->
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+
+        
+
+
+        
+
+
+    </ion-content>
+
+    
+</ion-view>

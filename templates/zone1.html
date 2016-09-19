@@ -1,0 +1,35 @@
+<ion-view view-title="Zone1">
+    <ion-content ng-class="{expanded:isExpanded}">
+
+        <div class="list animate-fade-slide-in-right dark-grey-bg list-house">
+        <div class="center spacing-top"><h4>Zone Details</h4></div>
+        
+
+
+          <div class="item line">
+            <div class="nav-menu">
+              <div ng-repeat="zone in zones.Districts | orderBy: 'Id'" class="badges"> 
+               {{zone.Name}}
+              </div>
+            </div>
+
+            <div class="item tn">Neighbourhoods</div>
+            <div ng-repeat="zone in zones.Neighborhoods | orderBy: 'Id' "> 
+              <div class="item  line lineb">
+                <h3>{{zone.Name}}</h3>
+                <p><i class="ion-woman icp"></i><i class="ion-man icp"></i> {{zone.Population}} Population</p>
+                <p><i class="ion-pie-graph icv"></i> {{Math.round(zone.ViolencePercentage)}}% Crime</p>
+              </div>     
+            </div>
+          </div>  
+            
+        </div>
+    </ion-content>
+
+   
+
+    
+</ion-view>
+
+
+

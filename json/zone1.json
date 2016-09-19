@@ -1,0 +1,5 @@
+{"Id":1,"Name":"ZONE1","Ratings":[],"Districts":[{"Id":1,"Name":"Etobicoke York","Color":"Blue"}],"Wards":[{"Id":1,"Name":"Etobicoke North"},{"Id":2,"Name":"Etobicoke North"},{"Id":7,"Name":"York West"}],"Neighborhoods":[{"Id":1,"Name":"West Humber-Clairville","Population":34100,"ViolencePercentage":0.0},{"Id":2,"Name":"Mount Olive-Silverstone-Jamestown","Population":32790,"ViolencePercentage":1.40363729},{"Id":3,"Name":"Thistletown-Beaumond Heights","Population":10140,"ViolencePercentage":0.390577316},{"Id":4,"Name":"Rexdale-Kipling","Population":10485,"ViolencePercentage":0.333618134},{"Id":5,"Name":"Elms-Old Rexdale","Population":9550,"ViolencePercentage":0.376337528},{"Id":21,"Name":"Humber Summit","Population":12530,"ViolencePercentage":0.5879002},{"Id":22,"Name":"Humbermede","Population":15850,"ViolencePercentage":0.701818645},{"Id":6,"Name":"Kingsview Village-The Westway","Population":21725,"ViolencePercentage":0.7140242},{"Id":7,"Name":"Willowridge-Martingrove-Richview","Population":21345,"ViolencePercentage":0.695715845},{"Id":8,"Name":"Humber Heights-Westmount","Population":10580,"ViolencePercentage":0.215631232}]}
+
+
+
+

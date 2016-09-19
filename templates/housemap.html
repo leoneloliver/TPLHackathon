@@ -1,0 +1,142 @@
+<ion-view view-title="Houses">
+    <ion-content ng-class="{expanded:isExpanded}">
+
+        <div class="list animate-fade-slide-in-right dark-grey-bg list-house">
+        <div class="center spacing-top"><h4>House Map</h4></div>
+        <div class="padding center">
+          <button class="button button-small button-dark" ui-sref="app.houselist">List <i class="ion-ios-list-outline"></i></button>
+        </div>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1Q7hJtlNIfmzjp7DGI3En4MXFU1U" width="100%" height="680"></iframe>
+        
+            
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.login"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.mylist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+
+    <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your home</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+                    <h4>Bedrooms</h4>
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      1 Bedroom
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      2 Bedrooms
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      3 Bedrooms
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      All
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+                </div>
+
+                <div class="list top-list">
+                <h4>Provider</h4>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid" checked="checked">
+                    <div class="item-content">
+                      CO-OP
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      PNP
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      THPC
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="provid">
+                    <div class="item-content">
+                      ALL
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.houselistreload()" onclick="location.reload();" ng-click="closeModal()">
+                    
+                      Search
+                    </button>
+                    
+       
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+</ion-view>
+
+
+

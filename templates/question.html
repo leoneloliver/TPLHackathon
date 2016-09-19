@@ -1,0 +1,82 @@
+<ion-view view-title="Question" class="profile favourite artists create">
+   
+    <ion-content >
+        
+      <div class="center spacing-top"><h4>Subsidized Housing Question</h4></div>
+
+
+        <div class="list animate-fade-slide-in-right grey-account list-artists">
+
+            <div class="list">
+            <p class="item">You have one of the following Acceptable Personal Identification Documents:</p>
+              <div class="elem-list item">
+                  <select class="browser-default button button-full  btn-select">
+                    
+                    <option value="1">Canadian Notice of Birth Registration Card</option>
+                    <option value="2">A Statement of Live Birth for children age four (4) or under</option>
+                    <option value="3">A certified copy of Statement of Live Birth</option>
+                    <option value="3">Quebec and Newfoundland Baptismal Certificate</option>
+                    <option value="3">Registered Indian Band Status (Native)</option>
+                    <option value="3">Canadian Passport</option>
+                    <option value="3">Canadian National Defence Card</option>
+                    
+
+                  </select>
+
+
+            </div>
+            <div class="item">
+              <ion-checkbox ng-model="isChecked">One household member must be 16 years of age or older</ion-checkbox>
+              <ion-checkbox ng-model="Checked">show a repayment schedule if one of your household members owes money to a social housing provider in Ontario</ion-checkbox>
+            </div>
+
+            <div class="item">...</div>
+              <div class="item">
+                
+                <button class="button button-light button-full button-positive" ui-sref="app.eligibility">Next step</button>
+
+              </div>
+              
+            </div>
+         
+            
+        </div>
+        <div class="space-footer"></div>
+
+        <!-- modal template -->
+        <script id="modal-start.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Thank you!</h4>
+            </ion-header-bar>
+            <ion-content>
+              
+              <div class="item" id="inner">
+              <p class="center">Thank you for registering!</p>
+                    
+                
+                <div class="padding center">
+                    <button class="button button-medium btn-n bar-balanced button-full" ui-sref="app.login">
+                      Getting Start
+                    </button>
+                    
+                    <!-- <button class="button button-medium bar-assertive" ng-click="closeModal()">close</button> -->
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+
+        
+
+
+        
+
+
+    </ion-content>
+
+    
+</ion-view>

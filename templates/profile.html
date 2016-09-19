@@ -1,0 +1,129 @@
+<ion-view view-title="Profile">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('http://www.chfi.com/wp-content/blogs.dir/2/files/city-hall-scandal.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('http://physics42.com/wp-content/uploads/2014/12/LEGO-Physics-Avatar-300x300.jpg');"></div>
+                <h3><a class="light">Leonel Oliveira</a></h3>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <!-- <a  class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> Activity
+            </a>
+            
+            <a  class="tab-item">
+                <i class="icon ion-images"></i> Photos
+            </a> -->
+        </div>
+        
+        <div class="padding center">
+          <button class="button button-small button-assertive button-full" ng-controller='ModalWishlistCtrl' ng-click="openModal()"><i class="ion-heart" id="wl"></i> Wishlist </button>
+        
+          <button class="button button-small button-positive button-full"><i class="ion-cube" id="wl"></i> My Application </button>
+        
+          <button class="button button-small button-balanced button-full"><i class="ion-chatbubble-working" id="wl"></i> My Messages </button>
+
+          <button class="button button-small bar-energized button-full"><i class="ion-gear-b" id="wl"></i> Edit Profile Information </button>
+        </div>
+
+        
+
+
+        <!-- <div class="list animate-fade-slide-in-right">
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/jon-snow.jpg">
+                <h2>Jon Snow</h2>
+                <p>Da illest illegitimate</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/sansa.jpg">
+                <h2>Sansa Stark</h2>
+                <p>&amp; Joffrey <strike>sitting</strike> sat in a tree</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/tyrion.jpg">
+                <h2>Tyrion Lannister</h2>
+                <p>B.A.M.F. imp</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+        </div> -->
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.login"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.houselist"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profile"><i class="ion-person"></i></a>
+              </div>
+              
+        </div>
+    </div>
+
+    
+
+    <!-- modal template -->
+        <script id="modal-wish.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Wishlist</h4>
+            </ion-header-bar>
+            <ion-content>
+              
+              <div class="item" id="inner">
+
+                    <div ng-if='mylist.img1' id='w1' class="listw">
+                      <img src='{{mylist.img1}}' width="60px"> <p class='pl'>{{mylist.title1}}</p> <a ng-click='del("1")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img2' id='w2' class="listw">
+                      <img src='{{mylist.img2}}' width="60px"> <p class='pl'>{{mylist.title2}}</p> <a ng-click='del("2")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img3' id='w3' class="listw">
+                      <img src='{{mylist.img3}}' width="60px"> <p class='pl'>{{mylist.title3}}</p> <a ng-click='del("3")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img4' id='w4' class="listw">
+                      <img src='{{mylist.img4}}' width="60px"> <p class='pl'>{{mylist.title4}}</p> <a ng-click='del("4")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img5' id='w5' class="listw">
+                      <img src='{{mylist.img5}}' width="60px"> <p class='pl'>{{mylist.title5}}</p> <a ng-click='del("5")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img6' id='w6' class="listw">
+                      <img src='{{mylist.img6}}' width="60px"> <p class='pl'>{{mylist.title6}}</p> <a ng-click='del("6")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img7' id='w7' class="listw">
+                      <img src='{{mylist.img7}}' width="60px"> <p class='pl'>{{mylist.title7}}</p> <a ng-click='del("7")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img8' id='w8' class="listw">
+                      <img src='{{mylist.img8}}' width="60px"> <p class='pl'>{{mylist.title8}}</p> <a ng-click='del("8")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img9' id='w9' class="listw">
+                      <img src='{{mylist.img9}}' width="60px"> <p class='pl'>{{mylist.title9}}</p> <a ng-click='del("9")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+                    <div ng-if='mylist.img10' id='w10' class="listw">
+                      <img src='{{mylist.img10}}' width="60px"> <p class='pl'>{{mylist.title10}}</p> <a ng-click='del("10")'><i class="ion-close-circled delico"></i></a>
+                    </div>
+
+                
+                <div class="padding center">
+                    <button class="button button-medium btn-n bar-balanced" ui-sref="app.thank" onclick="location.reload();" ng-click="closeModal()">
+                      Apply
+                    </button>
+                    
+                    <button class="button button-medium bar-assertive" ng-click="closeModal()">close</button>
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+</ion-view>
