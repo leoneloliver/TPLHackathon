@@ -23,8 +23,8 @@ Action (4.7): Ensure that homelessness and housing support services meet the div
 
 Authors:
 
-Alexandre Belloni Alves; 
+Alexandre Belloni Alves [Github](https://github.com/alexbelloni) 
 
-Gregory Uchitel;
+Gregory Uchitel
 
-Leonel Oliveira;
+Leonel Oliveira [Github](https://github.com/leoneloliver)
