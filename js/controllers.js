@@ -111,11 +111,13 @@ angular.module('starter.controllers', [])
             }
 
         }
-
+        // demo version login and password just to simulate
         if(login=="1234" && password =='1234'){
             window.location = "#/app/houselist";
         }else{
-            alert('No match for User and/or Password!');
+            //alert('No match for User and/or Password!');
+            alert('It is a demo version!');
+            window.location = "#/app/houselist";
         }
     }
 
