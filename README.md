@@ -29,7 +29,7 @@ What people are talking about it:
 -- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)
 
 
-[demo here](http://onclickmidia.net/library/) 
+[Demo here](http://onclickmidia.net/library/) 
 
 
 Authors:
