@@ -22,6 +22,12 @@ Action (4.7): Ensure that homelessness and housing support services meet the div
 
 Website Project: [Learn more](http://alexandrebelloni.com/poh/doc/index.html) 
 
+What people are talking about it:
+
+"I think this idea can make the search and application process easier as well as keeping track of submissions to waiting lists."
+
+-- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)
+
 
 Authors:
 
