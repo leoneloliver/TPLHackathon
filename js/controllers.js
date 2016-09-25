@@ -120,11 +120,7 @@ angular.module('starter.controllers', [])
             window.location = "#/app/houselist";
         }
     }
-
-
-
 })
-
 
 .controller('SearchCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk) {
     $scope.$parent.clearFabs();
@@ -174,7 +170,6 @@ angular.module('starter.controllers', [])
             startVelocity: 3000
         });
     }, 700);
-
 
     // Set Ink
     ionicMaterialInk.displayEffect();
@@ -234,7 +229,6 @@ angular.module('starter.controllers', [])
     // Set Ink
     ionicMaterialInk.displayEffect();
 
-
 }])
 
 .controller('EligibilityCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
@@ -246,9 +240,6 @@ angular.module('starter.controllers', [])
     $scope.$parent.setExpanded(false);
     $scope.$parent.setHeaderFab(false);
     
-
-    
-
     // Set Motion
     $timeout(function() {
         ionicMaterialMotion.slideUp({
@@ -261,9 +252,6 @@ angular.module('starter.controllers', [])
             startVelocity: 3000
         });
     }, 700);
-
-
-    
 
     // Set Ink
     ionicMaterialInk.displayEffect();
@@ -278,9 +266,6 @@ angular.module('starter.controllers', [])
     $scope.$parent.setExpanded(false);
     $scope.$parent.setHeaderFab(false);
     
-
-    
-
     // Set Motion
     $timeout(function() {
         ionicMaterialMotion.slideUp({
@@ -325,8 +310,6 @@ angular.module('starter.controllers', [])
 
     $scope.ok = function (idh,img,titles) {
        
-       
-
        if(idh == ""){
             localStorage.title1 = titles;
             localStorage.image1 = img;
@@ -378,11 +361,6 @@ angular.module('starter.controllers', [])
     // Set Ink
     ionicMaterialInk.displayEffect();
 })
-
-
-
-
-
 
 
 .controller('ActivityCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
@@ -455,8 +433,6 @@ angular.module('starter.controllers', [])
     }, 700);
 
 
-    
-
     // Set Ink
     ionicMaterialInk.displayEffect();
 })
@@ -494,8 +470,6 @@ angular.module('starter.controllers', [])
             startVelocity: 3000
         });
     }, 700);
-    
-    
 
     // Set Ink
     ionicMaterialInk.displayEffect();
@@ -506,7 +480,6 @@ angular.module('starter.controllers', [])
     day: 'Friday, Sep 12, 2015',
     hour: '11:00 AM'
   }
-
 
   $ionicModal.fromTemplateUrl('modal-search.html', {
     scope: $scope,
@@ -592,13 +565,9 @@ angular.module('starter.controllers', [])
     var link = document.getElementById('w'+idh);
     link.style.display = 'none';
 
-
   };
 
 })
-
-
-
 
 .controller('Zone1Ctrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
     // Set Header
@@ -631,8 +600,6 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();
 })
 
-
-
 .controller('ZonesCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
 
     // Set Header
@@ -652,8 +619,7 @@ angular.module('starter.controllers', [])
         alert("ERROR");
     });
 
-    
-
+   
     // Set Motion
     $timeout(function() {
         ionicMaterialMotion.slideUp({
@@ -667,13 +633,7 @@ angular.module('starter.controllers', [])
         });
     }, 700);
 
-
-    
-
     // Set Ink
     ionicMaterialInk.displayEffect();
 })
-
-
-
 ;
