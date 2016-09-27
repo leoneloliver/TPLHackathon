@@ -31,7 +31,7 @@ What people are talking about it:
 
 [Demo here](http://onclickmidia.net/library/) 
 
-[Video Presentation here](https://www.youtube.com/watch?v=X5PWzBvAzXU) 
+[Pitch on YouTube here](https://www.youtube.com/watch?v=X5PWzBvAzXU) 
 
 
 Authors:
