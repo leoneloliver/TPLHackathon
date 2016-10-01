@@ -28,8 +28,10 @@ What people are talking about it:
 
 -- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)
 
+Article on Library official website:
+[Cllick to see the article](http://torontopubliclibrary.typepad.com/digital_design_studio/2016/09/recap-tpls-second-annual-hackathon-toronto-poverty-reduction-strategy.html) 
 
-[Demo here](http://onclickmidia.net/library/) 
+[Live Demo here](http://onclickmidia.net/library/) 
 
 [Pitch on YouTube here](https://www.youtube.com/watch?v=X5PWzBvAzXU) 
 
