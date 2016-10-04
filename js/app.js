@@ -1,4 +1,4 @@
-// Ionic Starter App
+// Starter App
 angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput'])
 
 .run(function($ionicPlatform) {
