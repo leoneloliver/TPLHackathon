@@ -31,9 +31,9 @@ What people are talking about it:
 Article on Library official website:
 [Cllick to see the article](http://torontopubliclibrary.typepad.com/digital_design_studio/2016/09/recap-tpls-second-annual-hackathon-toronto-poverty-reduction-strategy.html) 
 
-[Live Demo here](http://onclickmidia.net/library/) 
+Live Demo [click here](http://onclickmidia.net/library/) 
 
-[Pitch on YouTube here](https://www.youtube.com/watch?v=X5PWzBvAzXU) 
+Pitch on YouTube [click here](https://www.youtube.com/watch?v=X5PWzBvAzXU) 
 
 
 Authors:
