@@ -38,10 +38,12 @@ Pitch on YouTube [click here](https://www.youtube.com/watch?v=X5PWzBvAzXU)
 
 Authors:
 
+Leonel Oliveira [Github](https://github.com/leoneloliver)
+
 Alexandre Belloni Alves [Github](https://github.com/alexbelloni) 
 
 Gregory Uchitel
 
-Leonel Oliveira [Github](https://github.com/leoneloliver)
+
 
 
