@@ -100,14 +100,10 @@ angular.module('starter.controllers', [])
 
         for(var i = 0; i < inputs.length; i++) {
             if(inputs[i].type.toLowerCase() == 'text') {
-                 //alert(inputs[i].value);
-                 var login = inputs[i].value;
-                
+                 var login = inputs[i].value;    
             }
             if(inputs[i].type.toLowerCase() == 'password') {
-                 //alert(inputs[i].value);
-                 var password = inputs[i].value;
-                
+                 var password = inputs[i].value;      
             }
 
         }
