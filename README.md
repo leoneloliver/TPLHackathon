@@ -23,14 +23,13 @@ Action (4.7): Ensure that homelessness and housing support services meet the div
 Website Project: [Learn more](http://alexandrebelloni.com/poh/doc/index.html) 
 
 What people are talking about it:
+ `"I think this idea can make the search and application process easier as well as keeping track of submissions to waiting lists."
 
-"I think this idea can make the search and application process easier as well as keeping track of submissions to waiting lists."
+-- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)`
 
--- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)
+`"The tool was well conceived, with good insight into the challenges and consideration related to the client, particularly the consideration of proximity to key amenities appropriate to the population. It pulled the appropriate data well and was responsive. I was also impressed by the design which was clean and accessible with strong graphic tools and an engaging overall feel."
 
-"The tool was well conceived, with good insight into the challenges and consideration related to the client, particularly the consideration of proximity to key amenities appropriate to the population. It pulled the appropriate data well and was responsive. I was also impressed by the design which was clean and accessible with strong graphic tools and an engaging overall feel."
-
--- Sean Meagher (Executive Director at Social Planning Toronto)
+-- Sean Meagher (Executive Director at Social Planning Toronto)`
 
 
 
