@@ -28,6 +28,12 @@ What people are talking about it:
 
 -- Reema Tarzi (Digital Project Manager| Mentor at TPL Hackathon)
 
+"The tool was well conceived, with good insight into the challenges and consideration related to the client, particularly the consideration of proximity to key amenities appropriate to the population. It pulled the appropriate data well and was responsive. I was also impressed by the design which was clean and accessible with strong graphic tools and an engaging overall feel."
+
+-- Sean Meagher (Executive Director at Social Planning Toronto)
+
+
+
 Article on Library official website:
 [Cllick to see the article](http://torontopubliclibrary.typepad.com/digital_design_studio/2016/09/recap-tpls-second-annual-hackathon-toronto-poverty-reduction-strategy.html) 
 
